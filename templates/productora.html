@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Wink - Photography portfolio template</title>
+    <title>Cambio de escena</title>
       <!--favicon-img--> 
    <link rel="icon" type="image/png" href="images/favicon.png">
    <!--favicon-img-->
@@ -22,6 +22,25 @@
   </head>
 
   <body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+     const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 5000, // Tiempo entre cada slide en milisegundos (3 segundos)
+            disableOnInteraction: false, // Continuar autoplay después de la interacción del usuario
+        },
+        // Elimina los controles de navegación
+        navigation: false,
+    });
+
+    window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 100); // Espera 100 ms antes de desplazarse
+        };
+</script>
+
 
     <div id="all" style="background-color: black;">
   <div id="preloader">
@@ -44,7 +63,7 @@
               <li style="color: darkorange" class="links contact-link fade-down"><a href="inicio.html">Inico </a></li>
               <li style="color: darkorange" class="links contact-link fade-down"><a href="documental.html">Documental </a></li>
               <li style="color: darkorange" class="links contact-link fade-down"><a href="productora.html">Productora </a></li>
-                       
+              <li style="color: darkorange" class="links contact-link fade-down"><a href="makingof.html">Making of</a></li>       
               <li style="color: darkorange" class="links contact-link fade-down"><a href="contactanos.html">Contactanos</a></li>
             </ul>
           </div>

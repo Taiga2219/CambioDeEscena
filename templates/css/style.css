@@ -96,6 +96,12 @@ html{
   background-size: cover;
 }
 
+.img-container.T {
+  background:url(../images/making2.png);
+  background-position: center;
+  background-size: cover;
+}
+
 .img-container.pro {
   background:url(../images/PRODUC.png);
   background-position: center;
